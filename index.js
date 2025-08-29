@@ -9,7 +9,18 @@ function clickHeart(){
 document.getElementById('card-container').addEventListener('click', function(event){
 
     const targetBtn = event.target.innerText.trim()
-    
+    if(targetBtn === 'Copy'){
+        const targetCard = event.target.parentNode.parentNode.id
+
+        const parents = document.getElementById(targetCard).children;
+        const parent = parents[0].children
+        const copyNumber = parent[3].innerText
+        navigator.clipboard.writeText(copyNumber);
+        let copyStored = parseInt(document.getElementById('copy-stored').innerText);
+        copyStored += 1;
+        document.getElementById('copy-stored').innerText = copyStored;
+        alert('Number has been copied : ' + copyNumber)
+    }
     if(targetBtn === 'Call'){
         const targetCard = event.target.parentNode.parentNode.id
 
