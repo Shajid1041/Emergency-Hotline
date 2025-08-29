@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emergency Hotline</title>
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- daisyUI cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- tailwind css cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-[#f5fff6]">
+    <header>
+      <nav
+        class="bg-white flex items-center justify-between max-w-[1800px] mx-auto"
+      >
+        <div class="flex items-center gap-2">
+          <img class="h-[50px]" src="assets/logo.png" alt="" />
+          <h1 class="text-xl font-extrabold">
+            Emergency <br />
+            Service
+          </h1>
+        </div>
+        <div class="flex items-center justify-center gap-3">
+          <button class="btn bg-[#41ff6b19] rounded-full font-extrabold">
+            <span>0</span><img class="h-[24px]" src="assets/heart.png" alt="" />
+          </button>
+          <button class="btn bg-[#41ff6b19] rounded-full font-extrabold">
+            <span>100</span
+            ><img class="h-[24px]" src="assets/coin.png" alt="" />
+          </button>
+          <button class="btn bg-[#00a63e] text-white rounded-full">
+            <span>0</span>Copy
+          </button>
+        </div>
+      </nav>
+      <div
+        class="banner bg-gradient-to-r from-[rgba(1,49,35,1)] via-[rgba(0,103,71,1)] to-[rgba(1,50,35,1)] text-center text-white flex flex-col items-center justify-center gap-2 py-3 mt-3"
+      >
+        <img class="h-[92px] w-[92px]" src="assets/logo-dark.png" alt="" />
+        <h1 class="font-bold text-[40px]">Emergency Service Directory</h1>
+        <p class="text-[20px]">
+          Government Emergency Services at Your Fingertip – A Project by
+          Government of the People’s Republic of Bangladesh
+        </p>
+      </div>
+    </header>
+    <main class="grid grid-cols-15 gap-5 max-w-[1240px] mx-auto mt-[50px]">
+      <div class="col-span-11 grid grid-cols-3">
+        <div class="bg-white p-[32px] shadow-md rounded-xl">
+          <div>
+            <div class="flex items-center justify-between">
+              <div class="bg-[#ffe3e2] rounded-2xl p-5">
+                <img
+                  class="h-[32px] w-[32px]"
+                  src="assets/fire-service.png"
+                  alt=""
+                />
+              </div>
+              <i class="fa-regular fa-heart text-2xl text-[#5c5c5c]"></i>
+            </div>
+            <h2 class="font-bold text-[18px]">Fire Service Number</h2>
+            <p class="text-[#5c5c5c]">Fire Service</p>
+            <h1 class="font-bold text-[30px]">999</h1>
+            <button class="btn bg-[#f2f2f2] rounded-full text-[#5c5c5c]">
+              Fire
+            </button>
+          </div>
+          <div class="flex gap-2 mt-3">
+            <button class="btn rounded-xl w-[48%]">
+              <i class="fa-regular fa-copy"></i> Copy
+            </button>
+            <button class="btn rounded-xl bg-[#00a63e] text-white w-[48%]">
+              <i class="fa-solid fa-phone font-light"></i> Call
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white p-[16px] shadow-md rounded-xl col-span-4">
+        <div class="flex items-center justify-between mb-3">
+          <div>
+            <h3>
+              <i class="fa-regular fa-clock mr-2 text-[#5c5c5c]"></i> Call
+              History
+            </h3>
+          </div>
+          <button class="btn bg-[#00a63e] text-white rounded-full">
+            Clear
+          </button>
+        </div>
+        <div id="call-history-container">
+
+
+          <div
+            class="rounded-lg bg-[#f5fff6] flex items-center justify-between p-3"
+          >
+            <div>
+              <h2 class="font-semibold">Fire Service Number</h2>
+              <p class="text-sm">999</p>
+            </div>
+            <p class="text-sm">11:36:58 AM</p>
+          </div>
+
+          
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
