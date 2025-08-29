@@ -35,10 +35,10 @@
         </div>
         <div class="flex items-center justify-center gap-3">
           <button class="btn bg-[#41ff6b19] rounded-full font-extrabold">
-            <span>0</span><img class="h-[24px]" src="assets/heart.png" alt="" />
+            <span id="heart-stored">0</span><img class="h-[24px]" src="assets/heart.png" alt="" />
           </button>
           <button class="btn bg-[#41ff6b19] rounded-full font-extrabold">
-            <span>100</span
+            <span id="avilable-coin">100</span
             ><img class="h-[24px]" src="assets/coin.png" alt="" />
           </button>
           <button class="btn bg-[#00a63e] text-white rounded-full">
@@ -57,9 +57,9 @@
         </p>
       </div>
     </header>
-    <main class="grid grid-cols-15 gap-5 max-w-[1240px] mx-auto mt-[50px]">
-      <div class="col-span-11 grid grid-cols-3">
-        <div class="bg-white p-[32px] shadow-md rounded-xl">
+    <main class="grid grid-cols-12 gap-5 max-w-[1240px] mx-auto mt-[50px]">
+      <div id="card-container" class="col-span-9 grid grid-cols-3">
+        <div id="card-1" class="bg-white p-[22px] shadow-md rounded-xl">
           <div>
             <div class="flex items-center justify-between">
               <div class="bg-[#ffe3e2] rounded-2xl p-5">
@@ -69,7 +69,7 @@
                   alt=""
                 />
               </div>
-              <i class="fa-regular fa-heart text-2xl text-[#5c5c5c]"></i>
+              <i onclick="clickHeart()" class="fa-regular fa-heart text-2xl text-[#5c5c5c]"></i>
             </div>
             <h2 class="font-bold text-[18px]">Fire Service Number</h2>
             <p class="text-[#5c5c5c]">Fire Service</p>
@@ -82,13 +82,13 @@
             <button class="btn rounded-xl w-[48%]">
               <i class="fa-regular fa-copy"></i> Copy
             </button>
-            <button class="btn rounded-xl bg-[#00a63e] text-white w-[48%]">
+            <button class="call-btn btn rounded-xl bg-[#00a63e] text-white w-[48%]">
               <i class="fa-solid fa-phone font-light"></i> Call
             </button>
           </div>
         </div>
       </div>
-      <div class="bg-white p-[16px] shadow-md rounded-xl col-span-4">
+      <div class="bg-white p-[16px] shadow-md rounded-xl col-span-3">
         <div class="flex items-center justify-between mb-3">
           <div>
             <h3>
@@ -96,26 +96,20 @@
               History
             </h3>
           </div>
-          <button class="btn bg-[#00a63e] text-white rounded-full">
+          <button id="clear-btn" class="btn bg-[#00a63e] text-white rounded-full">
             Clear
           </button>
         </div>
         <div id="call-history-container">
 
 
-          <div
-            class="rounded-lg bg-[#f5fff6] flex items-center justify-between p-3"
-          >
-            <div>
-              <h2 class="font-semibold">Fire Service Number</h2>
-              <p class="text-sm">999</p>
-            </div>
-            <p class="text-sm">11:36:58 AM</p>
-          </div>
-
           
+
+
         </div>
       </div>
     </main>
+
+    <script src="index.js"></script>
   </body>
 </html>
